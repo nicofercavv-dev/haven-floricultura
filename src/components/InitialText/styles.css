@@ -1,0 +1,19 @@
+.initial-text-container {
+    width: 55%;
+    padding: 30px 0px;
+}
+
+.page-title {
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: #233E32;
+    line-height: 1.25;
+    font-family: 'Alice';
+}
+
+.initial-text-paragraph {
+    color: #2C2821;
+    margin-top: 27px;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}

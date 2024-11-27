@@ -1,0 +1,71 @@
+.main-container {
+  height: 130vh;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mission-topics-container {
+  height: 100vh;
+  width: 55%;
+}
+
+.mission-topics-container > h2 {
+  font-size: 2.5rem;
+  color: #233E32;
+  font-family: 'Alice';
+  margin-bottom: 45px;
+}
+
+.mission-topics-inner-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.topic {
+  width: 95%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.topic-text {
+  max-width: calc(95% - 40px);
+}
+
+.number {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2C2821;
+  background-color: #F0EDE6;
+  font-size: 1.68rem;
+}
+
+.topic > div > h3 {
+  color: #2C2821;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-family: 'Alice';
+}
+
+.topic > div > p {
+  color: #2C2821;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.partners-image {
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("https://imgproxy.gamma.app/resize/quality:80/resizing_type:fit/width:1200/https://cdn.gamma.app/2cocvxlbdtwp7ex/875fb3e16d254bffb6f8397d34bc9722/original/Imagem-do-WhatsApp-de-2024-10-10-a-s-21.33.40_aae572b3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

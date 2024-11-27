@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FCFBF8;
+  font-family: 'Lora', 'Times New Roman', Times, serif;
+}

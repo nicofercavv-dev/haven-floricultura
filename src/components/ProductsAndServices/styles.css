@@ -1,0 +1,55 @@
+.products-services-container {
+  width: 85%;
+  height: 230vh;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.products-services-container > h2 {
+  font-size: 2.5rem;
+  color: #233e32;
+  font-family: "Alice";
+  margin-bottom: 45px;
+}
+
+.products-services-container > img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.product-option-container {
+  margin-top: 20px;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.option {
+  background-color: #f0ede6;
+  padding: 25px 15px;
+}
+
+.option > h3,
+li {
+  color: #2c2821;
+}
+
+.option > h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.option > ul > li {
+  font-size: 1.125rem;
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  line-height: 1.6;
+}

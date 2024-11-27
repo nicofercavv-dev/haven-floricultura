@@ -1,0 +1,82 @@
+.main-products-container {
+  width: 85%;
+  height: 130vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-products-container > h2 {
+  font-size: 2.5rem;
+  font-family: "Alice";
+  color: #233e32;
+  margin-bottom: 40px;
+}
+
+.product-options {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flower-icon {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 20px;
+}
+
+.product-option {
+  width: 30%;
+  height: 100%;
+}
+
+.product-option > h3 {
+  font-size: 1.4rem;
+  font-family: "Alice";
+  color: #2c2821;
+}
+
+.product-option > p {
+  font-size: 1.125rem;
+  color: #2c2821;
+  line-height: 1.6;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.product-image-1 {
+  width: 100%;
+  height: 90%;
+  margin: 23px 0;
+  overflow: hidden;
+  background-image: url("https://imgproxy.gamma.app/resize/quality:80/resizing_type:fit/width:2000/https://cdn.gamma.app/2cocvxlbdtwp7ex/450ce8cde55d4988b659aa07725877b3/original/4777ba4efb9075aec8a39ec66c8fe35b.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.product-image-2 {
+  width: 100%;
+  height: 90%;
+  margin: 23px 0;
+  overflow: hidden;
+  background-image: url("https://imgproxy.gamma.app/resize/quality:80/resizing_type:fit/width:2000/https://cdn.gamma.app/2cocvxlbdtwp7ex/e97f2115080245889b1cac66df0dfdda/original/691f43d96665b24f7abbf5698b0baa7f.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.product-image-3 {
+  width: 100%;
+  height: 90%;
+  margin: 23px 0;
+  overflow: hidden;
+  background-image: url("https://imgproxy.gamma.app/resize/quality:80/resizing_type:fit/width:2000/https://cdn.gamma.app/2cocvxlbdtwp7ex/360580beb5464d0fbaa8008f3fa64b78/original/6e49ba81a511f3cafb916139c1e941a1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

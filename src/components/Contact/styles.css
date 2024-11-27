@@ -1,0 +1,46 @@
+.contact-container {
+  width: 85%;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-container > h2 {
+  font-family: 'Alice';
+  font-size: 2.5rem;
+  color: #233E32;
+  margin-bottom: 50px;
+}
+
+.options-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-option {
+  width: 21.25%;
+}
+
+.contact-option > h3 {
+  font-family: 'Alice';
+  font-size: 1.4rem;
+  color: #233E32;
+  margin-bottom: 20px;
+}
+
+.contact-option > p {
+  font-size: 1.125rem;
+  color: #2C2821;
+  line-height: 1.6;
+}
+
+.contact-option > a {
+  font-size: 1.125rem;
+  color: #1B5F39;
+  text-decoration: underline;
+  font-weight: 600;
+}

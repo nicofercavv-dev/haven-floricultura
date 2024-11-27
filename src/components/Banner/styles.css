@@ -1,0 +1,13 @@
+.banner-container {
+  height: 65vh;
+  width: 40%;
+  overflow: hidden;
+  background-image: url("https://imgproxy.gamma.app/resize/quality:80/resizing_type:fit/width:1200/https://cdn.gamma.app/2cocvxlbdtwp7ex/bebce0d78cbe4672aa100a1774250f21/original/blob.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner-image {
+  max-width: 70%;
+  float: right;
+}
