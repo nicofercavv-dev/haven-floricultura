@@ -9,7 +9,6 @@ import MainProducts from "./components/MainProducts/MainProducts";
 import MissionVisionAndValues from "./components/MissionVisionAndValues/MissionVisionAndValues";
 import ProductsAndServices from "./components/ProductsAndServices/ProductsAndServices";
 import WhenToBuyFlowers from "./components/WhenToBuyFlowers/WhenToBuyFlowers";
-import "fullpage.js/dist/fullpage.css";
 
 function App() {
   return (
