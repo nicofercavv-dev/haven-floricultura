@@ -1,6 +1,5 @@
 import "./App.css";
 import About from "./components/About/About";
-import Carrousel from "./components/Carrousel/Carrousel";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
@@ -10,6 +9,7 @@ import MainProducts from "./components/MainProducts/MainProducts";
 import MissionVisionAndValues from "./components/MissionVisionAndValues/MissionVisionAndValues";
 import ProductsAndServices from "./components/ProductsAndServices/ProductsAndServices";
 import WhenToBuyFlowers from "./components/WhenToBuyFlowers/WhenToBuyFlowers";
+import "fullpage.js/dist/fullpage.css";
 
 function App() {
   return (
@@ -24,7 +24,6 @@ function App() {
       <Contact />
       <InspoGallery />
       <Footer />
-      <Carrousel/>
     </>
   );
 }
