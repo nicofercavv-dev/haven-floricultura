@@ -55,3 +55,28 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+@media (max-width: 1024px) {
+  .contact-container > h2 {
+    font-size: 2rem;
+  }
+
+  .options-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 33px;
+  }
+
+  .contact-option {
+    width: 100%;
+  }
+
+  .contact-option > h3 {
+    font-size: 1.125rem;
+    margin-bottom: 12px;
+  }
+
+  .contact-option > p, .contact-option > a {
+    font-size: 1rem;
+  }
+}

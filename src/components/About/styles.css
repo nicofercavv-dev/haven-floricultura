@@ -46,3 +46,32 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+@media (max-width: 1024px) {
+  .about-container {
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .about-container > h2 {
+    font-size: 2rem;
+  }
+
+  .about-topics {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .about-topics > div {
+    width: 100%;
+  }
+
+  .about-topics > div > h3 {
+    font-size: 1.125rem;
+  }
+
+  .about-topics > div > p {
+    font-size: 1rem;
+    text-align: left;
+  }
+}

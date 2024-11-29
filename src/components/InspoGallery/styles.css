@@ -83,3 +83,49 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+@media (max-width: 1024px) {
+  .inspo-gallery-container {
+    width: 85%;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+  .inspo-gallery-container > h2 {
+    font-size: 2rem;
+  }
+
+  .photos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 13px;
+  }
+
+  .gallery-photo {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@media (max-width: 460px) {
+  .inspo-gallery-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .photos-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: auto;
+  }
+
+  .gallery-photo {
+    width: 100%;
+    height: 250px;
+  }
+}

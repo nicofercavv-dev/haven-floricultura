@@ -80,3 +80,49 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+@media (max-width: 1024px) {
+  .main-container {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin-top: 80px;
+  }
+
+  .mission-topics-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .mission-topics-container > h2 {
+    font-size: 2rem;
+  }
+
+  .mission-topics-inner-container {
+    width: 100%;
+  }
+
+  .number {
+    font-size: 1.25rem;
+  }
+
+  .topic > div > h3 {
+    font-size: 1.125rem;
+  }
+
+  .topic > div > p {
+    font-size: 1rem;
+  }
+
+  .partners-image {
+    width: 100%;
+    height: 400px;
+    display: block;
+  }
+}
+
+@media (max-width: 460px) {
+  .partners-image {
+    height: 300px;
+  }
+}

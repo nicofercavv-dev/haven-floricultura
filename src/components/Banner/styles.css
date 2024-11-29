@@ -20,3 +20,10 @@
     transform: scale(1);
   }
 }
+
+@media (max-width: 1024px) {
+  .banner-container {
+    height: 50%;
+    width: 100%;
+  }
+}

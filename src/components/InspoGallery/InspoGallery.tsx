@@ -44,7 +44,7 @@ const InspoGallery: React.FC<InspoGalleryProps> = ({ openCarrouselModal }) => {
           setInView(true); // Ativa a animação
         }
       },
-      { threshold: 0.25 } // O elemento deve estar 50% visível
+      { threshold: 0.1 } // O elemento deve estar 50% visível
     );
 
     if (targetRef.current) {

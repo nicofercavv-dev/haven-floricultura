@@ -44,10 +44,6 @@
   line-height: 1.6;
 }
 
-.product-image {
-  width: 100%;
-}
-
 .product-image-1 {
   width: 100%;
   height: 90%;
@@ -90,4 +86,45 @@
 .animated-element.in-view {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (max-width: 1024px) {
+  .main-products-container {
+    height: 380vh;
+  }
+
+  .main-products-container > h2 {
+    font-size: 2rem;
+  }
+
+  .product-options {
+    flex-direction: column;
+    height: 90%;
+  }
+
+  .product-option {
+    width: 100%;
+    height: 30%;
+  }
+
+  .product-option > h3 {
+    font-size: 1.125rem;
+  }
+
+  .product-option > p {
+    font-size: 1rem;
+  }
+
+  .product-image-1 {
+    width: 100%;
+    height: 80%;
+  }
+  .product-image-2 {
+    width: 100%;
+    height: 80%;
+  }
+  .product-image-3 {
+    width: 100%;
+    height: 80%;
+  }
 }

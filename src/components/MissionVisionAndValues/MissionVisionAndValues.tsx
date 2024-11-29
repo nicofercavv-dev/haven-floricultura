@@ -40,7 +40,7 @@ const MissionVisionAndValues: React.FC = () => {
           setInView(true); // Ativa a animação
         }
       },
-      { threshold: 0.5 } // O elemento deve estar 50% visível
+      { threshold: 0.3 } // O elemento deve estar 50% visível
     );
 
     if (targetRef.current) {
@@ -55,13 +55,11 @@ const MissionVisionAndValues: React.FC = () => {
   }, [scrollingDown]);
 
   return (
-    <div className="main-container">
-      <div
-        ref={targetRef}
-        className={`animated-element ${
-          inView ? "in-view" : ""
-        } mission-topics-container`}
-      >
+    <div
+      ref={targetRef}
+      className={`animated-element ${inView ? "in-view" : ""} main-container`}
+    >
+      <div className="mission-topics-container">
         <h2>Missão, Visão e Valores</h2>
         <div className="mission-topics-inner-container">
           <div className="topic">
@@ -98,10 +96,7 @@ const MissionVisionAndValues: React.FC = () => {
           </div>
         </div>
       </div>
-      <div
-        ref={targetRef}
-        className={`animated-element ${inView ? "in-view" : ""} partners-image`}
-      />
+      <div className="partners-image" />
     </div>
   );
 };

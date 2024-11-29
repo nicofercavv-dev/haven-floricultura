@@ -31,3 +31,18 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 1024px) {
+  .initial-text-container {
+    width: 100%;
+  }
+
+  .page-title {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .initial-text-paragraph {
+    font-size: 1rem;
+  }
+}

@@ -43,7 +43,7 @@ const MainProducts: React.FC = () => {
           setInView(true); // Ativa a animação
         }
       },
-      { threshold: 0.4 } // O elemento deve estar 50% visível
+      { threshold: 0.1 } // O elemento deve estar 50% visível
     );
 
     if (targetRef.current) {

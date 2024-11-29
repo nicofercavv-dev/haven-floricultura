@@ -18,6 +18,11 @@ interface CarrouselProps {
 const Carrousel: React.FC<CarrouselProps> = ({ initialSlide }) => {
   // Atualize para usar SwiperClass como tipo
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass | null>(null);
+  const [isMobileScreen, setIsMobileScreen] = useState(false);
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth < 1025) return setIsMobileScreen(true);
+  });
 
   const styles = {
     "--swiper-navigation-color": "#fcfbf8",
@@ -47,7 +52,7 @@ const Carrousel: React.FC<CarrouselProps> = ({ initialSlide }) => {
       <Swiper
         onSwiper={(swiper) => setThumbsSwiper(swiper)}
         spaceBetween={10}
-        slidesPerView={9}
+        slidesPerView={isMobileScreen ? 3 : 9}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
