@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper as SwiperClass } from "swiper"; // Importa o tipo
 
 import "../../../node_modules/swiper/swiper-bundle.css";
 import "../../../node_modules/swiper/modules/free-mode.css";
@@ -15,15 +16,17 @@ interface CarrouselProps {
 }
 
 const Carrousel: React.FC<CarrouselProps> = ({ initialSlide }) => {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  // Atualize para usar SwiperClass como tipo
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass | null>(null);
+
+  const styles = {
+    "--swiper-navigation-color": "#fcfbf8",
+  } as React.CSSProperties;
 
   return (
     <>
       <Swiper
-        style={{
-          "--swiper-navigation-color": "#fcfbf8",
-          "--swiper-pagination-color": "#fcfbf8",
-        }}
+        style={styles}
         spaceBetween={10}
         navigation={true}
         thumbs={{ swiper: thumbsSwiper }}
@@ -31,36 +34,18 @@ const Carrousel: React.FC<CarrouselProps> = ({ initialSlide }) => {
         className="mySwiper2"
         initialSlide={initialSlide}
       >
-        <SwiperSlide>
-          <img src={`${location.origin}/images/img-1.jpg`} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={`${location.origin}/images/img-2.jpg`} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={`${location.origin}/images/img-3.jpg`} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={`${location.origin}/images/img-4.jpg`} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={`${location.origin}/images/img-5.jpg`} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={`${location.origin}/images/img-6.jpg`} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={`${location.origin}/images/img-7.jpg`} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={`${location.origin}/images/img-8.jpg`} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={`${location.origin}/images/img-9.jpg`} />
-        </SwiperSlide>
+        {[...Array(9)].map((_, index) => (
+          <SwiperSlide key={`slide-${index}`}>
+            <img
+              src={`${location.origin}/images/img-${index + 1}.jpg`}
+              alt={`Imagem ${index + 1}`}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
+
       <Swiper
-        onSwiper={setThumbsSwiper}
+        onSwiper={(swiper) => setThumbsSwiper(swiper)}
         spaceBetween={10}
         slidesPerView={9}
         freeMode={true}
@@ -68,60 +53,15 @@ const Carrousel: React.FC<CarrouselProps> = ({ initialSlide }) => {
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <img
-            className="lower-slider-img"
-            src={`${location.origin}/images/img-1.jpg`}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="lower-slider-img"
-            src={`${location.origin}/images/img-2.jpg`}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="lower-slider-img"
-            src={`${location.origin}/images/img-3.jpg`}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="lower-slider-img"
-            src={`${location.origin}/images/img-4.jpg`}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="lower-slider-img"
-            src={`${location.origin}/images/img-5.jpg`}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="lower-slider-img"
-            src={`${location.origin}/images/img-6.jpg`}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="lower-slider-img"
-            src={`${location.origin}/images/img-7.jpg`}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="lower-slider-img"
-            src={`${location.origin}/images/img-8.jpg`}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="lower-slider-img"
-            src={`${location.origin}/images/img-9.jpg`}
-          />
-        </SwiperSlide>
+        {[...Array(9)].map((_, index) => (
+          <SwiperSlide key={`thumb-${index}`}>
+            <img
+              className="lower-slider-img"
+              src={`${location.origin}/images/img-${index + 1}.jpg`}
+              alt={`Thumbnail ${index + 1}`}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );
