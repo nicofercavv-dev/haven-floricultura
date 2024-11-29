@@ -33,6 +33,10 @@
   margin-bottom: 10px;
 }
 
+.motive-option > img {
+  width: 50px;
+}
+
 .motive-text {
   height: 100%;
   display: flex;

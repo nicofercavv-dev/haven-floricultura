@@ -1,5 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./styles.css";
+import cakeImg from "../../assets/cake.svg";
+import ringsImg from "../../assets/ring.svg";
+import caseImg from "../../assets/case.svg";
+import starImg from "../../assets/star.svg";
 
 const WhenToBuyFlowers: React.FC = () => {
   const [inView, setInView] = useState(false);
@@ -64,24 +68,28 @@ const WhenToBuyFlowers: React.FC = () => {
       <h2>Quando comprar flores</h2>
       <div className="motives-list">
         <div className="motive-option">
+          <img src={cakeImg} alt="Bolo" />
           <div className="motive-text">
             <h3>Aniversários</h3>
             <p>Celebre com estilo e beleza, criando um presente memorável.</p>
           </div>
         </div>
         <div className="motive-option">
+          <img src={ringsImg} alt="Anéis entrelaçados" />
           <div className="motive-text">
             <h3>Casamentos</h3>
             <p>Enfeite seu dia especial com arranjos únicos e sofisticados.</p>
           </div>
         </div>
         <div className="motive-option">
+          <img src={caseImg} alt="Maleta" />
           <div className="motive-text">
             <h3>Eventos Corporativos</h3>
             <p>Crie um ambiente elegante e acolhedor para seus eventos .</p>
           </div>
         </div>
         <div className="motive-option">
+          <img src={starImg} alt="Estrela" />
           <div className="motive-text">
             <h3>Datas Especiais</h3>
             <p>
