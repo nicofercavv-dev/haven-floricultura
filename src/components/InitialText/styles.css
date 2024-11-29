@@ -1,7 +1,7 @@
 .initial-text-container {
   width: 55%;
-  padding: 30px 0px;
-  transform: translateY(50px);
+  padding: 40px 0px;
+  transform: translateY(20px);
   opacity: 0;
   animation: slide-up 0.6s ease-out forwards;
 }
@@ -23,7 +23,7 @@
 
 @keyframes slide-up {
   0% {
-    transform: translateY(50px);
+    transform: translateY(20px);
     opacity: 0;
   }
   100% {
