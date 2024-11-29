@@ -14,8 +14,8 @@
 
 .mission-topics-container > h2 {
   font-size: 2.5rem;
-  color: #233E32;
-  font-family: 'Alice';
+  color: #233e32;
+  font-family: "Alice";
   margin-bottom: 45px;
 }
 
@@ -42,20 +42,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #2C2821;
-  background-color: #F0EDE6;
+  color: #2c2821;
+  background-color: #f0ede6;
   font-size: 1.68rem;
 }
 
 .topic > div > h3 {
-  color: #2C2821;
+  color: #2c2821;
   font-size: 1.4rem;
   margin-bottom: 15px;
-  font-family: 'Alice';
+  font-family: "Alice";
 }
 
 .topic > div > p {
-  color: #2C2821;
+  color: #2c2821;
   font-size: 1.15rem;
   line-height: 1.6;
 }
@@ -68,4 +68,15 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.animated-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animated-element.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }

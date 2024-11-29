@@ -1,0 +1,32 @@
+.carrousel-modal-container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 50;
+  position: fixed;
+  top: 0;
+}
+
+.carrousel-modal-container > button {
+  color: #fcfbf8;
+  background: none;
+  border: none;
+  box-shadow: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrousel-modal-container > button:hover {
+  background-color: rgba(29, 29, 29, 0.8);
+}
+
+.carrousel-modal-container > button > img {
+  width: 25px;
+}

@@ -10,14 +10,14 @@
 
 .footer-container > p {
   width: 20%;
-  color: rgba(252, 251, 248, 0.3);
+  color: #FCFBF8;
   font-size: 0.8rem;
   line-height: 1.3;
 }
 
 .footer-container > h2 {
   width: 15%;
-  color: rgba(252, 251, 248, 0.3);
+  color: #FCFBF8;
   font-family: 'Alice';
   font-size: 1.5rem;
   text-align: center;
