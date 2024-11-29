@@ -16,10 +16,9 @@ interface CarrouselProps {
 }
 
 const Carrousel: React.FC<CarrouselProps> = ({ initialSlide }) => {
-  // Atualize para usar SwiperClass como tipo
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass | null>(null);
-  const [isMobileScreen, setIsMobileScreen] = useState(false);
-
+  const [isMobileScreen, setIsMobileScreen] = useState(window.innerWidth > 1024 ? false : true);
+  
   window.addEventListener('resize', () => {
     if (window.innerWidth < 1025) return setIsMobileScreen(true);
   });
