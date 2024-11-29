@@ -90,7 +90,7 @@
 
 @media (max-width: 1024px) {
   .main-products-container {
-    height: 380vh;
+    height: auto;
   }
 
   .main-products-container > h2 {
@@ -99,12 +99,13 @@
 
   .product-options {
     flex-direction: column;
-    height: 90%;
+    height: auto;
   }
 
   .product-option {
     width: 100%;
-    height: 30%;
+    height: auto;
+    margin-bottom: 50px;
   }
 
   .product-option > h3 {
@@ -117,14 +118,14 @@
 
   .product-image-1 {
     width: 100%;
-    height: 80%;
+    height: 450px;
   }
   .product-image-2 {
     width: 100%;
-    height: 80%;
+    height: 450px;
   }
   .product-image-3 {
     width: 100%;
-    height: 80%;
+    height: 450px;
   }
 }
